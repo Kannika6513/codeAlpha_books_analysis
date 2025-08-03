@@ -60,7 +60,6 @@ This task focuses on **visualizing patterns and trends** in the dataset using `S
 
 - Python  
 - Jupyter Notebook
-- vs code 
 - Pandas  
 - Matplotlib  
 - Seaborn  
