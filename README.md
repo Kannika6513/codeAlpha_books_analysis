@@ -1,59 +1,89 @@
-#📘 Book Data Scraping & Analysis Project
-This repository contains my work for a data analysis internship project where I scraped, cleaned, and visualized book data from the website Books to Scrape. The project is divided into three major tasks:
+# 📘 Book Data Scraping & Analysis Project
 
-#Task 1: Web Scraping – Extract Book Data
-In this task, I built a Python-based web scraper using requests and BeautifulSoup to extract information from 50 pages of books listed on the BooksToScrape website. The data collected includes:
+This repository contains my work for a **data analysis internship project** where I scraped, cleaned, and visualized book data from the website [Books to Scrape](https://books.toscrape.com/). The project is divided into three major tasks:
 
-Title
+---
 
-Price (GBP)
+## 🧪 Task 1: Web Scraping – Extract Book Data
 
-Rating
+In this task, I built a **Python-based web scraper** using `requests` and `BeautifulSoup` to extract information from **50 pages of books** listed on the BooksToScrape website.
 
-Genre
+📦 **Data fields collected:**
+- Title
+- Price (GBP)
+- Rating
+- Genre
 
-The scraped data was saved in a structured format (CSV file) for further analysis.
+✅ I scraped not only the listing pages but also the **inner book pages** to extract the **Genre**, enriching the dataset with more valuable information.
 
-🔄 I ensured all pages were iterated through and also scraped inner book pages to extract the genre field, making the dataset richer.
+🗂️ The final data was saved as a structured **CSV file** for further analysis.
 
- Task 2: Exploratory Data Analysis (EDA)
-The main objective of Task 2 was to explore and understand the dataset. Key steps included:
+---
 
-✅ Dataset loading and preview
+## 📊 Task 2: Exploratory Data Analysis (EDA)
 
-✅ Data type check using df.info()
+The objective of Task 2 was to perform **basic exploratory analysis** on the scraped dataset using **Pandas** and **Matplotlib**.
 
-✅ Missing values check
+🔍 **Key EDA steps:**
+- Dataset loading and preview
+- Data type inspection using `df.info()`
+- Missing values check
+- Summary statistics (`describe()`)
+- Genre-wise average price calculation
+- Frequency counts for Ratings and Genres
+- Duplicate data check
+- Outlier detection using boxplots
 
-✅ Summary statistics of Price (describe())
+🧠 This step helped uncover hidden insights and ensured data quality before moving to visualizations.
 
-✅ Genre-wise average price calculation
+---
 
-✅ Frequency counts for Ratings and Genres
+## 📈 Task 3: Data Visualization
 
-✅ Duplicate data check
+This task focuses on **visualizing patterns and trends** in the dataset using `Seaborn` and `Matplotlib`.
 
-✅ Outlier detection using boxplots
+📉 **Visualizations created:**
+- 📚 Top 10 Genres by Book Count
+- 📊 Book Count by Genre and Rating (Grouped Bar Chart)
+- 💸 Genre vs Average Price
+- ⭐ Rating vs Average Price
+- 💰 Top 5 Most Expensive Books
+- 🧾 Genres with the Highest Average Price
+- 📈 Distribution of Book Prices
+- ⭐ Count of Books per Rating Level
 
-🧠 This task helped uncover data insights and check for data integrity before visualization.
+🎯 These visualizations reveal important insights into customer preferences, pricing strategies, and genre popularity.
 
-📈 Task 3: Data Visualization
-Here, I visualized key patterns in the dataset using Matplotlib and Seaborn. The visualizations include:
+---
 
-Top 10 Genres by book count
+## 🛠️ Tools & Libraries Used
 
-Book count by Genre and Rating (grouped bar chart)
+- Python  
+- Jupyter Notebook
+- vs code 
+- Pandas  
+- Matplotlib  
+- Seaborn  
+- BeautifulSoup  
+- Requests  
 
-Genre vs Average Price
+---
 
-Rating vs Average Price
+## 📁 Repository Structure
 
-Top 5 most expensive books
+| File | Description |
+|------|-------------|
+| `task1.py` | Python script for scraping the book dataset |
+| `scraped_bookdata.csv` | Cleaned dataset |
+| `task2.ipynb` | Exploratory Data Analysis notebook |
+| `task3.ipynb` | Data Visualization notebook |
+| `README.md` | Project overview and documentation |
 
-Comparison of genres with the highest average price
+---
 
-Distribution of book prices
+## 🙏 Acknowledgements
 
-Count of books per rating level
+Special thanks to **[BooksToScrape](https://books.toscrape.com/)** for providing an excellent dataset for practice in web scraping and data analysis.
 
-🎯 All visualizations are designed to extract business or user behavior insights and enhance data storytelling.
+---
+
